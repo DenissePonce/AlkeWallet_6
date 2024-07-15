@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registrarse - Alke Wallet</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <h1>Registrarse en Alke Wallet</h1>
+        <nav>
+            <a th:href="@{/login}">Iniciar Sesión</a>
+            <a th:href="@{/}">Inicio</a>
+        </nav>
+    </header>
+    <main>
+        <form th:action="@{/register}" th:object="${user}" method="post">
+            <label>Nombre de Usuario:</label>
+            <input type="text" th:field="*{username}" required /><br/>
+            <label>Contraseña:</label>
+            <input type="password" th:field="*{password}" required /><br/>
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+</body>
+</html>

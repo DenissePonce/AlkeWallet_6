@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Alke Wallet</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Alke Wallet</h1>
+        <nav>
+            <a th:href="@{/login}">Iniciar Sesión</a>
+            <a th:href="@{/register}">Registrarse</a>
+            <a th:href="@{/transactions}">Ver Transacciones</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Administra tu dinero de manera fácil y segura</h2>
+            <p>Con Alke Wallet, puedes gestionar tus fondos, realizar transacciones y mucho más.</p>
+        </section>
+        <section>
+            <h2>Características</h2>
+            <ul>
+                <li>Registro y Login seguros</li>
+                <li>Gestión de fondos</li>
+                <li>Historial de transacciones</li>
+                <li>Soporte para depósitos y retiros</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Acciones</h2>
+            <button onclick="location.href='/login'">Iniciar Sesión</button>
+            <button onclick="location.href='/register'">Registrarse</button>
+            <button onclick="location.href='/transactions'">Ver Transacciones</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alke Wallet. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
